@@ -1,0 +1,67 @@
+1. Apresentação
+Este projeto é um apoio para controle de medicamentos, o principal objetivo é "abandonar" o antigo controle de remédios diários de potes para alertas exclusivos e gerência de medicamentos.
+Como experimento prático ele está contextualizado na construção de um sistema em aplicativo mobile, o qual auxilia o usuário na gestão de seus remédios e controle de vencimento de receitas. Além disso, o sistema ainda terá a opção de cadastro de um responsável, que conseguirá acompanhar se o usuário está ingerindo os remédios devidamente. Por ser voltado para um público de maior idade e que consequentemente não tem muito conhecimento de tecnologias, temos a proposta de um projeto interativo e de fácil uso.
+Sabemos que na correria do dia a dia, muitas vezes acabamos esquecendo de tarefas importantes, como ingerir um remédio controlado. De acordo com o farmacêutico Vagner Miguel, da Associação Nacional de Farmacêuticos Magistrais (Anfarmag), o risco mais comum de tomar o remédio na hora errada é o efeito positivo ser reduzido. “Dependendo do caso, pode acontecer de o organismo não absorver tão bem as substâncias presentes no medicamento que são necessárias para resolver algum problema de saúde. Embora não seja em todo tratamento que exista um horário específico para ingerir um medicamento, é importante consumi-lo nas horas indicadas pelo médico”, alerta.
+
+2. Equipe	
+•	Caio Mariano | Dev
+•	Danielle Moreira | PO 
+•	Isis Cristina | PO
+•	Laura Xavier | PO
+•	Thiago Davi | Dev
+
+3. Atores
+•	Usuário 
+•	Opcional: Responsável pelo usuário (caso seja idoso).
+•	Opcional: Idoso
+
+4. Requisitos Funcionais
+
+4.1. Registrar usuário (CRUD completo);
+
+4.2. Alertar usuário
+O sistema deve alertar se o registro do usuário foi completado com sucesso ou se houve alguma divergência nos dados inseridos. Caso tenha sido completado, o sistema irá gerar um número de identificação do usuário.
+
+4.3. Registrar responsável (CRUD completo); 
+Opção de realizar o cadastro do idoso, inserir seus medicamentos e horários relacionados com ele.
+
+4.4. Alertar responsável
+O sistema deve alertar se o registro do responsável foi completado com sucesso ou se houve alguma divergência nos dados inseridos. Caso tenha sido completado, o sistema irá direcioná-lo para a página de visualização do planejamento, já se houver alguma divergência retornará para a página de registro, demonstrando em vermelho o campo que não foi preenchido corretamente.
+
+4.5. Inclusão de medicamento;
+O sistema deve conter uma tela onde o usuário principal ou responsável preencha os campos remédio, horário a utilizar, quantidade de cápsulas para tomar.
+
+4.6. Inclusão vencimento da receita;
+Data prevista para estoque de remédio e gestão de medicamento para efetuar a compra ANTES de acabar o estoque.
+
+4.7. Inclusão de tarefa;
+	Realizou ou não a tarefa registrada; 
+
+4.8. Remoção de medicamento;
+
+4.9. Indicação de calendário do sistema;
+	Acompanhamento diário de atividades a realizar.
+
+4.10. Consulta de histórico do sistema;
+	Controle de remédios tomados no horário ou não.
+
+4.11. Notificação para o idoso perguntando de forma amigável se o remédio foi tomado ou não.
+
+4.12 Notificação para responsável alertando se o remédio foi tomado ou não. Caso não tenha sido, lembrete para o idoso.
+
+4.13. Notificação para o usuário alertando se a receita está prestes a vencer.
+
+
+5. Requisitos Não Funcionais
+
+5.1. Para o registro de um novo usuário é necessário obrigatoriamente preencher os campos e-mail, senha, Idade, sexo, peso, altura e ano de nascimento.
+	5.2. Para o registro de um novo responsável é necessário obrigatoriamente preencher os campos e-mail, senha e código do usuário que deseja acompanhar.
+5.3. Um mesmo e-mail não poderá ser utilizado para registro por usuários diferentes.
+5.4. O número de identificação do usuário deverá ser único, ou seja, cada usuário possui seu próprio código sendo eles diferentes para cada um.
+5.5. O lembrete de medicação deve alertar 5 minutos antes lembrando que está quase no horário de tomar a medicação. O próximo lembrete deve ser no horário programado para alerta. 
+5.6. Para o sistema Responsável-idoso, a informação de que o medicamento foi tomado ou não, deve ser informada imediatamente para o responsável após a opção selecionado pelo idoso.
+5.7. A página de Consulta de histórico deve conter um gráfico indicando se os horários cadastrados condizem com os horários de inserção do medicamento.
+5.8. O lembrete sobre vencimento da receita deve ser 7 dias antes do vencimento, alertando a cada 2 dois dias.
+5.9. O sistema terá uma interface simples de forma que o usuário entenda com facilidade o que deve ser feito.
+5.10. As tarefas identificadas no calendário terão as cores semelhantes do remédio que deve ser tomado.
+
